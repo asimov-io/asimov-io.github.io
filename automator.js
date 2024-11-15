@@ -190,9 +190,9 @@ async function constructGraphAutomaton() {
 	let accepting = nodes[node]["accepting"];
 	let start = nodes[node]["start"];
 	if (accepting)
-	    graph += '\t"'+node+'" [shape = doublecircle];\n';
+	    graph += '\t"'+node+'" [shape = doublecircle label=""];\n';
 	else
-	    graph += '\t"'+node+'" [shape = circle];\n';
+	    graph += '\t"'+node+'" [shape = circle label=""];\n';
 
 	for (const a of alphabet) {
 	    graph += '\t "' + node + '" -> "' + rows[concat_words(start, a)] + '" [ label = "' + a + '"];\n';
