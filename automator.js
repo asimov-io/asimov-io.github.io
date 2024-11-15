@@ -337,3 +337,8 @@ document.getElementById('submitCounterexample').addEventListener('click', functi
     L_star_algorithm();
     
 });
+
+document.getElementById('foundSolution').addEventListener('click', function() {
+	document.getElementById('question-section').classList.add('hidden');
+	document.getElementById('automaton').classList.add('hidden');
+});
