@@ -341,4 +341,5 @@ document.getElementById('submitCounterexample').addEventListener('click', functi
 document.getElementById('foundSolution').addEventListener('click', function() {
 	document.getElementById('question-section').classList.add('hidden');
 	document.getElementById('automaton').classList.add('hidden');
+	document.getElementById('endScreen').classList.remove('hidden');
 });
