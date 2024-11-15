@@ -342,5 +342,6 @@ document.getElementById('foundSolution').addEventListener('click', function() {
 	document.getElementById('question-section').classList.add('hidden');
 	document.getElementById('automaton').classList.add('hidden');
 	document.getElementById('endScreen').classList.remove('hidden');
+    	let automaton_guess = await constructGraphAutomaton();
 	renderGraph(automaton_guess);
 });
